@@ -432,6 +432,7 @@ class objectHtmlDataList:
         self.dest_path = dest_path
         self.actual_file_name = actual_file_name
         self.combine_flag = combine_flag
+        self.object_path = os.getcwd() + os.sep + 'result_text'
         self.throw = []
         self.attribute_value_list_key = []
         self.attribute_value_list_value = []
@@ -502,10 +503,10 @@ class objectHtmlDataList:
             page << d
             f.close()
 
-        object_path = os.getcwd() + os.sep + 'result_text'
-        if not os.path.exists(object_path):
-            os.makedirs(object_path)
-        page.printOut(object_path + os.sep + 'result_show.html')
+
+        if not os.path.exists(self.object_path):
+            os.makedirs(self.object_path)
+        page.printOut(self.object_path + os.sep + 'result_show.html')
         return self.attribute_value_list_key, self.attribute_value_list_value
 
 #生成text文档
@@ -644,6 +645,29 @@ def judge_input_file(file):
         file_info_list.append([actual_file_name, pre_dir_name])
     return file_info_list
 
+#处理将html文件拷贝到另一台机器后造成的格式问题bug
+def deal_html_data():
+    object_path = os.getcwd() + os.sep + 'result_text'
+    read_file = open(object_path + os.sep + 'result_show.html', 'r')
+    write_file = open(object_path + os.sep + 'final_result.html', 'w')
+
+    line = read_file.readline()
+    write_file.write(line)
+    while len(line) != 0:
+        line = read_file.readline()
+        if 'href' in line:
+            write_file.write('<style type="text/css">tr{ white-space:0;}\n.table0{border:none;width:100%;}\n'
+                             '.table0_td{padding:0 0px 0px 0;}\n.table1 {border-collapse:collapse;width:100%;}\n'
+                             '.table1 td{ height:30px;border:#333333 solid 1px;text-align:center;width:25%}\n'
+                             '</style></head>\n')
+            continue
+        write_file.write(line)
+    read_file.close()
+    write_file.close()
+    os.remove(object_path + os.sep + 'result_show.html')
+    shutil.copy(object_path + os.sep + 'final_result.html', object_path + os.sep + 'result_show.html')
+    os.remove(object_path + os.sep + 'final_result.html')
+
 if __name__ == '__main__':
     time_start = time.time()
     #命令行参数设置
@@ -670,5 +694,7 @@ if __name__ == '__main__':
         create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, attribute_value_list_value, combine_flag, print_flag)
     #清理临时文件
     clear_temp_file(combine_flag=False)
+    # 处理将html文件
+    deal_html_data()
     time_end = time.time()
     # print time_end - time_start
