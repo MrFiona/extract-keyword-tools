@@ -1,0 +1,890 @@
+------------------------------------------------------------
+Intel(R) System Scope Tool
+Version: 3.0.1042
+Build Date: Dec 28 2016
+Copyright (C) Intel Corporation 2016
+For any queries or issue contact: systemscopetool@intel.com
+------------------------------------------------------------
+
+BIOS Information {Type 0}
+"BIOS Vendor", "Intel Corporation"
+"BIOS Version", "PLYXCRB1.86B.1001.D66.1701302155"
+"Starting Address Segment", "F000h"
+"BIOS Release Date", "01/30/2017"
+"BIOS ROM Size", "16384 KB"
+
+BIOS Characteristics
+"BIOS Characteristics Not Supported", "No"
+"ISA is supported", "No"
+"MCA is supported", "No"
+"EISA is supported", "No"
+"PCI is supported", "Yes"
+"PC Card (PCMCIA) is supported", "No"
+"Plug and Play is supported", "Yes"
+"APM is supported", "No"
+"BIOS is Upgradeable (Flash)", "Yes"
+"BIOS shadowing is allowed", "Yes"
+"VL-VESA is supported", "No"
+"ESCD support is available", "No"
+"Boot from CD is supported", "Yes"
+"Selectable Boot is supported", "Yes"
+"BIOS ROM is socketed", "No"
+"Boot From PC Card (PCMCIA) is supported", "No"
+"EDD (Enhanced Disk Drive) Specification is supported", "Yes"
+"Int 13h - Japanese Floppy for NEC 9800 1.2mb (3.5inch, 1k Bytes/Sector, 360 RPM) is supported", "No"
+"Int 13h - Japanese Floppy for Toshiba 1.2mb (3.5inch, 360 RPM) is supported", "No"
+"Int 13h - 5.25inch / 360 KB Floppy Services are supported", "No"
+"Int 13h - 5.25inch /1.2MB Floppy Services are supported", "Yes"
+"Int 13h - 3.5inch / 720 KB Floppy Services are supported", "Yes"
+"Int 13h - 3.5inch / 2.88 MB Floppy Services are supported", "Yes"
+"Int 5h, Print Screen Service is supported", "Yes"
+"Int 9h, 8042 Keyboard services are supported", "Yes"
+"Int 14h, Serial Services are supported", "Yes"
+"Int 17h, Printer Services are supported", "Yes"
+"Int 10h, CGA/Mono Video Services are supported", "Yes"
+"NEC PC-98", "No"
+
+BIOS Characteristics Ext Byte 1
+"ACPI Supported", "Yes"
+"USB Legacy is Supported", "Yes"
+"AGP Supported", "No"
+"I2O boot is Supported", "No"
+"LS-120 boot is Supported", "Yes"
+"ATAPI ZIP Drive Boot is Supported", "Yes"
+"1394 Boot is Supported", "No"
+"Smart Battery Supported", "No"
+
+BIOS Characteristics Ext Byte 2
+"BIOS Boot Specification supported", "Yes"
+"Function key-initiated Network Service boot supported", "Yes"
+"Enable Targeted Content Distribution", "Yes"
+"System BIOS Minor Release", "0"
+"System BIOS Major Release", "0"
+"Embedded Controller Firmware Major Release", "0h (0)"
+"Embedded Controller Firmware Minor Release", "0h (0)"
+
+System Information {Type 1}
+"Manufacturer", "Intel Corporation"
+"Product Name", "PURLEY"
+"Version", "E63448-400"
+"Serial Number", "SPRO03200016"
+"UUID", "88 88 88 88 87 88 10 1b c 12 1f 2b a5 a5 a5 a5"
+"Wake-up Type", "Power Switch"
+"SKU Number", "SKU Number"
+"Family", "Family"
+
+Base board Information {Type 2}
+"Manufacturer", "Intel Corporation"
+"Board Name/ ID", "PURLEY"
+"Fab ID", "E63448-400"
+"Serial Number", "SPRO03200016"
+
+System Enclosure or Chassis Types {Type 3}
+"Manufacturer", "Intel Corporation"
+"Type", "Rack Mount Chassis"
+"Chassis Lock", "Not Present or Unknown"
+"Version", "0.1"
+"Serial Number", "UNKNOWN"
+"Asset Tag Number", "Chassis Asset Tag"
+
+Processor Information {Type 4}
+"Socket Designation", "CPU0"
+"Processor Type", "Central Processor"
+"Processor Family", "Intel(R) Core(TM) i3"
+"Processor Manufacturer", "Intel(R) Corporation"
+"Processor ID", "BFEBFBFFh 00050654h"
+"Processor Version", "Genuine Intel(R) CPU 0000%@"
+"Voltage", "1.6V"
+"External Clock", "100 MHz"
+"Max Speed", "4000 MHz"
+"Current Speed", "2100 MHz"
+"Status", "CPU Socket Populated, Status Enabled"
+"Processor Upgrade", "Unknown, Value read = 0x2B"
+
+Processor Information {Type 4}_2
+"Socket Designation", "CPU1"
+"Processor Type", "Central Processor"
+"Processor Family", "Intel(R) Core(TM) i3"
+"Processor Manufacturer", "Intel(R) Corporation"
+"Processor ID", "BFEBFBFFh 00050654h"
+"Processor Version", "Genuine Intel(R) CPU 0000%@"
+"Voltage", "1.6V"
+"External Clock", "100 MHz"
+"Max Speed", "4000 MHz"
+"Current Speed", "2100 MHz"
+"Status", "CPU Socket Populated, Status Enabled"
+"Processor Upgrade", "Unknown, Value read = 0x2B"
+
+Cache Information {Type 7}
+"Socket Designation", "L1-Cache"
+"Cache Configuration", "L1; Not Socketed; Internal; Enabled; Write Back"
+"Maximum Cache Size", "1M"
+"Installed Size", "1M"
+"Supported SRAM Type", "Synchronous"
+"Current SRAM Type", "Synchronous"
+"Cache Speed", "0 Ns (unknown)"
+"Error Correction Type", "Single-bit ECC"
+"System Cache Type", "Instruction"
+"Associativity", "8-way Set-Associative"
+
+Cache Information {Type 7}_2
+"Socket Designation", "L2-Cache"
+"Cache Configuration", "L2; Not Socketed; Internal; Enabled; Varies with Memory address"
+"Maximum Cache Size", "24M"
+"Installed Size", "24M"
+"Supported SRAM Type", "Synchronous"
+"Current SRAM Type", "Synchronous"
+"Cache Speed", "0 Ns (unknown)"
+"Error Correction Type", "Single-bit ECC"
+"System Cache Type", "Unified"
+"Associativity", "16-way Set-Associative"
+
+Cache Information {Type 7}_3
+"Socket Designation", "L3-Cache"
+"Cache Configuration", "L3; Not Socketed; Internal; Enabled; Varies with Memory address"
+"Maximum Cache Size", "33M"
+"Installed Size", "33M"
+"Supported SRAM Type", "Synchronous"
+"Current SRAM Type", "Synchronous"
+"Cache Speed", "0 Ns (unknown)"
+"Error Correction Type", "Single-bit ECC"
+"System Cache Type", "Unified"
+"Associativity", "Fully Associative"
+
+Cache Information {Type 7}_4
+"Socket Designation", "L1-Cache"
+"Cache Configuration", "L1; Not Socketed; Internal; Enabled; Write Back"
+"Maximum Cache Size", "1M"
+"Installed Size", "1M"
+"Supported SRAM Type", "Synchronous"
+"Current SRAM Type", "Synchronous"
+"Cache Speed", "0 Ns (unknown)"
+"Error Correction Type", "Single-bit ECC"
+"System Cache Type", "Instruction"
+"Associativity", "8-way Set-Associative"
+
+Cache Information {Type 7}_5
+"Socket Designation", "L2-Cache"
+"Cache Configuration", "L2; Not Socketed; Internal; Enabled; Varies with Memory address"
+"Maximum Cache Size", "24M"
+"Installed Size", "24M"
+"Supported SRAM Type", "Synchronous"
+"Current SRAM Type", "Synchronous"
+"Cache Speed", "0 Ns (unknown)"
+"Error Correction Type", "Single-bit ECC"
+"System Cache Type", "Unified"
+"Associativity", "16-way Set-Associative"
+
+Cache Information {Type 7}_6
+"Socket Designation", "L3-Cache"
+"Cache Configuration", "L3; Not Socketed; Internal; Enabled; Varies with Memory address"
+"Maximum Cache Size", "33M"
+"Installed Size", "33M"
+"Supported SRAM Type", "Synchronous"
+"Current SRAM Type", "Synchronous"
+"Cache Speed", "0 Ns (unknown)"
+"Error Correction Type", "Single-bit ECC"
+"System Cache Type", "Unified"
+"Associativity", "Fully Associative"
+
+Port Connector Information {Type 8}
+"Internal Reference Designator", "To Be Filled By O.E.M."
+"Internal Connector Type", "Access Bus"
+"External Reference Designator", "To Be Filled By O.E.M."
+"External Connector Type", "Access Bus"
+"Port Type", "USB"
+
+Port Connector Information {Type 8}_2
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "J4A2 - Serial Port A"
+"External Connector Type", "DB-9 pin male"
+"Port Type", "Serial Port 16550 Compatible"
+
+Port Connector Information {Type 8}_3
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "J126 - Serial Port B"
+"External Connector Type", "DB-9 pin male"
+"Port Type", "Serial Port 16550 Compatible"
+
+Port Connector Information {Type 8}_4
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "J1D1 - USB3 front panel port"
+"External Connector Type", "Access Bus"
+"Port Type", "USB"
+
+Port Connector Information {Type 8}_5
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "J92  - USB2 front panel port"
+"External Connector Type", "Access Bus"
+"Port Type", "USB"
+
+Port Connector Information {Type 8}_6
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "J4A1 - USB3 back panel connector"
+"External Connector Type", "Access Bus"
+"Port Type", "USB"
+
+Port Connector Information {Type 8}_7
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "J70  - BMC VIDEO REAR PANEL VGA"
+"External Connector Type", "DB-15 pin female"
+"Port Type", "Video Port"
+
+Port Connector Information {Type 8}_8
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "J9K2 - BMC VIDEO FRONT PANEL VGA"
+"External Connector Type", "DB-15 pin female"
+"Port Type", "Video Port"
+
+Port Connector Information {Type 8}_9
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "NIC 1  (10GBE port / J64) 20pin"
+"External Connector Type", "RJ-45"
+"Port Type", "Network Port"
+
+Port Connector Information {Type 8}_10
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "NIC 2  (10GBE port / J65) 20pin"
+"External Connector Type", "RJ-45"
+"Port Type", "Network Port"
+
+Port Connector Information {Type 8}_11
+"Internal Reference Designator", "None"
+"Internal Connector Type", "None"
+"External Reference Designator", "RMM NIC (JA2) 14pin"
+"External Connector Type", "RJ-45"
+"Port Type", "Network Port"
+
+Port Connector Information {Type 8}_12
+"Internal Reference Designator", "Internal USB (USB3 port /J4A3)  internal Type-A 1 9pin"
+"Internal Connector Type", "Access Bus"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "USB"
+
+Port Connector Information {Type 8}_13
+"Internal Reference Designator", "Internal USB (USB2 port /J82)   internal Type A 2 4 pin"
+"Internal Connector Type", "Access Bus"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "USB"
+
+Port Connector Information {Type 8}_14
+"Internal Reference Designator", "TPM ( SPI type / J101) 12pin"
+"Internal Connector Type", "Other - Ref Des indicates type"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "Other"
+
+Port Connector Information {Type 8}_15
+"Internal Reference Designator", "J76  - SATA6G S4"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SATA"
+
+Port Connector Information {Type 8}_16
+"Internal Reference Designator", "J4B6 - SATA6G S5"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SATA"
+
+Port Connector Information {Type 8}_17
+"Internal Reference Designator", "J77  - SATA6G P0-3"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SATA"
+
+Port Connector Information {Type 8}_18
+"Internal Reference Designator", "J83  - SATA6G P4-7"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SATA"
+
+Port Connector Information {Type 8}_19
+"Internal Reference Designator", "J84  - SATA 4,5,6,7"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SATA"
+
+Port Connector Information {Type 8}_20
+"Internal Reference Designator", "J85  - SATA 8,9"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SATA"
+
+Port Connector Information {Type 8}_21
+"Internal Reference Designator", "J77 - SATA 0-3 (min-SAS)"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SATA"
+
+Port Connector Information {Type 8}_22
+"Internal Reference Designator", "J10 - SAS"
+"Internal Connector Type", "SAS/SATA Plug Receptacle"
+"External Reference Designator", "None"
+"External Connector Type", "None"
+"Port Type", "SAS"
+
+System Slots {Type 9}
+"Slot Designation", "J3B2 - Riser 1, slot 1"
+"Slot Type", "PCI Express Gen 3 x16"
+"Slot Data Bus Width", "16x or x16"
+"Current Usage", "Avaialble"
+"Slot Length", "Long Length"
+"Slot ID", "01h"
+"Slot Characteristics", "Provides 3.3 volts"
+
+System Slots {Type 9}_2
+"Slot Designation", "J3B2 - Riser 1, slot 3"
+"Slot Type", "PCI Express Gen 3 x16"
+"Slot Data Bus Width", "16x or x16"
+"Current Usage", "Avaialble"
+"Slot Length", "Long Length"
+"Slot ID", "04h"
+"Slot Characteristics", "Provides 3.3 volts"
+
+System Slots {Type 9}_3
+"Slot Designation", "J6B1 - Riser 2, slot 4"
+"Slot Type", "PCI Express Gen 3 x8"
+"Slot Data Bus Width", "8x or x8"
+"Current Usage", "Avaialble"
+"Slot Length", "Long Length"
+"Slot ID", "06h"
+"Slot Characteristics", "Provides 3.3 volts"
+
+System Slots {Type 9}_4
+"Slot Designation", "J6B1 - Riser 2, slot 6"
+"Slot Type", "PCI Express Gen 3 x8"
+"Slot Data Bus Width", "8x or x8"
+"Current Usage", "Avaialble"
+"Slot Length", "Long Length"
+"Slot ID", "08h"
+"Slot Characteristics", "Provides 3.3 volts"
+
+OEM Strings {Type 11}
+"Number of OEM Strings", "1"
+"OEM String", "To Be Filled By O.E.M."
+
+System Configuration Options {Type 12}
+"Number of System Configuration Options Strings", "1"
+"System Configuration Options String", "To Be Filled By O.E.M."
+
+BIOS Language Information {Type 13}
+"Current Language", "enus (English, United States)"
+"Flags", "01h"
+"Number of Installable Languages", "1"
+"Language", "enus (English, United States)"
+
+Physical Memory Array {Type 16}
+"Location", "System board or motherboard"
+"Use", "System memory"
+"Memory Error Correction", "Single-bit ECC"
+"Maximum Capacity", "2415919104"
+"Memory Error Information Handle", "FFFEh"
+"Number of Memory Devices", "6"
+
+Physical Memory Array {Type 16}_2
+"Location", "System board or motherboard"
+"Use", "System memory"
+"Memory Error Correction", "Single-bit ECC"
+"Maximum Capacity", "2415919104"
+"Memory Error Information Handle", "FFFEh"
+"Number of Memory Devices", "6"
+
+Physical Memory Array {Type 16}_3
+"Location", "System board or motherboard"
+"Use", "System memory"
+"Memory Error Correction", "Single-bit ECC"
+"Maximum Capacity", "2415919104"
+"Memory Error Information Handle", "FFFEh"
+"Number of Memory Devices", "6"
+
+Physical Memory Array {Type 16}_4
+"Location", "System board or motherboard"
+"Use", "System memory"
+"Memory Error Correction", "Single-bit ECC"
+"Maximum Capacity", "2415919104"
+"Memory Error Information Handle", "FFFEh"
+"Number of Memory Devices", "6"
+
+Memory Device {Type 17}
+"Memory Array Handle", "001Ch"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "72 (0048h)"
+"Data Width", "64 (0040h)"
+"Size", "32767 (7FFFh)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_A1"
+"Bank Locator", "NODE 1"
+"Memory Type", "DDR4"
+"Type Detail", "0880h"
+"Type Detail Description", "Synchronous, Cache DRAM"
+
+Memory Device {Type 17}_2
+"Memory Array Handle", "001Ch"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "72 (0048h)"
+"Data Width", "64 (0040h)"
+"Size", "32767 (7FFFh)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_A2"
+"Bank Locator", "NODE 1"
+"Memory Type", "DDR4"
+"Type Detail", "1080h"
+"Type Detail Description", "Synchronous, Non-volatile"
+
+Memory Device {Type 17}_3
+"Memory Array Handle", "001Ch"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_B1"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_4
+"Memory Array Handle", "001Ch"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_B2"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_5
+"Memory Array Handle", "001Ch"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_C1"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_6
+"Memory Array Handle", "001Ch"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_C2"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_7
+"Memory Array Handle", "0026h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_D1"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_8
+"Memory Array Handle", "0026h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_D2"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_9
+"Memory Array Handle", "0026h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_E1"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_10
+"Memory Array Handle", "0026h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_E2"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_11
+"Memory Array Handle", "0026h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_F1"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_12
+"Memory Array Handle", "0026h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU1_DIMM_F2"
+"Bank Locator", "NODE 1"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_13
+"Memory Array Handle", "002Dh"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_A1"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_14
+"Memory Array Handle", "002Dh"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_A2"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_15
+"Memory Array Handle", "002Dh"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_B1"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_16
+"Memory Array Handle", "002Dh"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_B2"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_17
+"Memory Array Handle", "002Dh"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_C1"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_18
+"Memory Array Handle", "002Dh"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_C2"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_19
+"Memory Array Handle", "0034h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_D1"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_20
+"Memory Array Handle", "0034h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_D2"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_21
+"Memory Array Handle", "0034h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_E1"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_22
+"Memory Array Handle", "0034h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_E2"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_23
+"Memory Array Handle", "0034h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_F1"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Device {Type 17}_24
+"Memory Array Handle", "0034h"
+"Memory Error Information Handle", "FFFEh"
+"Total Width", "0 (0000h)"
+"Data Width", "0 (0000h)"
+"Size", "0 (0000h)"
+"Form Factor", "DIMM"
+"Device Set", "0000h"
+"Device Locator", "CPU2_DIMM_F2"
+"Bank Locator", "NODE 2"
+"Memory Type", "Unknown"
+"Type Detail", "0080h"
+"Type Detail Description", "Synchronous"
+
+Memory Array Mapped Address {Type 19}
+"Starting Address", "00000000h"
+"Ending Address", "01FFFFFFh"
+"Memory Array Handle", "001Ch"
+"Partition Width", "06h"
+
+Memory Device Mapped Address {Type 20}
+"Starting Address", "00000000h"
+"Ending Address", "01FFFFFFh"
+"Memory Device Handle", "001Eh"
+"Memory Array Mapped Address Handle", "001Dh"
+"Partition Row Position", "01h"
+"Interleave Position", "00h"
+"Interleaved Data Depth", "00h"
+
+Memory Device Mapped Address {Type 20}_2
+"Starting Address", "02000000h"
+"Ending Address", "05F2FFFFh"
+"Memory Device Handle", "0020h"
+"Memory Array Mapped Address Handle", "001Dh"
+"Partition Row Position", "01h"
+"Interleave Position", "00h"
+"Interleaved Data Depth", "00h"
+
+Cooling Device {Type 27}
+"Temperature Probe Handle", "000Bh"
+"Device Type and Status", "63h"
+"Cooling Unit Group", "01h"
+"OEM Defined", "00000000h"
+
+Temperature Probe {Type 28}
+"Description", "LM78A"
+"Location and Status", "06h"
+"Maximum Value", "8000h"
+"Minimum Value", "8000h"
+"Resolution", "8000h"
+"Tolerance", "8000h"
+"Accuracy", "8000h"
+"OEM Defined", "00000000h"
+
+System Boot Information {Type 32}
+"Boot Status", "0000h"
+"Description", "No errors detected"
+
+Management Device {Type 34}
+"Description", "UNKNOWN"
+"Error Type", "Unknown"
+"Address", "00000000h"
+"Address Type", "Unknown"
+
+Management Device Component {Type 35}
+"Description", "To Be Filled By O.E.M."
+
+Management Device Threshold Data {Type 36}
+"Lower Threshold - Non-critical", "08000h"
+"Upper Threshold - Non-critical", "08000h"
+"Lower Threshold - Critical", "08000h"
+"Upper Threshold - Critical", "08000h"
+"Lower Threshold - Non-recoverable", "08000h"
+"Upper Threshold - Non-recoverable", "08000h"
+
+IPMI Device Information {Type 38}
+"Interface Type", "KCS: Keyboard Controller Style"
+"IPMI Specification Revision", "Revision 2.0"
+"I2C Slave Address", "20h"
+"NV Storage Device Address", "FFh"
+"Base Address", "0CA3h"
+"Base Address Modifier / Interrupt Info", "00h"
+"Interrupt Number", "0"
+
+System Power Supply {Type 39}
+"Power Unit Group", "01h Redundancy. At least one other power supply will be enumerated with the same value"
+"Location", "To Be Filled By O.E.M."
+"Device Name", "To Be Filled By O.E.M."
+"Manufacturer", "To Be Filled By O.E.M."
+"Serial Number", "To Be Filled By O.E.M."
+"Asset Tag Number", "To Be Filled By O.E.M."
+"Model Part Number", "To Be Filled By O.E.M."
+"Revision Level", "To Be Filled By O.E.M."
+"Max Power Capacity", "32768 milliWatts"
+"DMTF Power Supply Type", "Unknown"
+"DMTF Power Supply Status", "Unknown"
+"DMTF Input Voltage Range Switching", "Unknown"
+"Is power supply unplugged from the wall", "No"
+"Is power supply present", "Yes"
+"Is power supply hot-replaceable", "No"
+"Input Voltage Probe Handle", "0000h"
+"Cooling Device Handle", "000Ah"
+"Input Current Probe Handle", "0000h"
+
+Onboard Devices Extended Information {Type 41}
+"Reference Designation", "ServerEngines Pilot III"
+"Device Status", "Device Disabled"
+"Device Type", "Video"
+"Device Type Instance", "00h"
+"Segment Group Number", "0"
+"Bus Number", "255"
+"Device Number", "0"
+"Function Number", "0"
+
+Onboard Devices Extended Information {Type 41}_2
+"Reference Designation", "Intel X540"
+"Device Status", "Device Disabled"
+"Device Type", "Ethernet"
+"Device Type Instance", "00h"
+"Segment Group Number", "0"
+"Bus Number", "255"
+"Device Number", "0"
+"Function Number", "0"
+
+Onboard Devices Extended Information {Type 41}_3
+"Reference Designation", "SAS"
+"Device Status", "Device Disabled"
+"Device Type", "SAS Controller"
+"Device Type Instance", "00h"
+"Segment Group Number", "0"
+"Bus Number", "255"
+"Device Number", "0"
+"Function Number", "0"
+
+Onboard Devices Extended Information {Type 41}_4
+"Reference Designation", "PCH Integrated SATA Controller"
+"Device Status", "Device Enabled"
+"Device Type", "SATA Controller"
+"Device Type Instance", "00h"
+"Segment Group Number", "0"
+"Bus Number", "0"
+"Device Number", "31"
+"Function Number", "2"

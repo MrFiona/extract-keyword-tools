@@ -1,0 +1,6 @@
+[ result_SMBIOS ]
+Description   LM78A
+Description   No errors detected
+Description   UNKNOWN
+Description   To Be Filled By O.E.M.
+
