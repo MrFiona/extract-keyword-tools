@@ -1,4 +1,3 @@
-[ result_OsInfo ]
 Build Number            9600
 Build Type              Multiprocessor Free
 Caption                 Microsoft Windows Server 2012 R2 Datacenter
@@ -26,4 +25,3 @@ Version                 6.3.9600
 WIMBoot Configuration   Not Enabled
 Windows Directory       C:\windows
 WQL                     Unknown
-
