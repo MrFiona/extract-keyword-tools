@@ -323,7 +323,7 @@ def range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list
                     os.makedirs(result_path)
 
                 final = open(result_file, 'wb+')
-                ftemp = open(os.getcwd()+os.sep+actual_file_name, 'r')
+                ftemp = open(pre_dir_name+os.sep+actual_file_name, 'r')
 
                 # 如果不能在并且combine无连接标记时清零文件，防止之前的结果保留
                 #支持特殊字符扩展  如：^|表示开头,$表示结尾  需要考虑关键词含有这两个特殊字符的处理  2017-04-10
