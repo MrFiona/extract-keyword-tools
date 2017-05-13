@@ -8,9 +8,17 @@ import glob
 import time
 import shutil
 import getopt
-from pyh import *
 from create_xml import create_xml
 
+try:
+    from pyh import PyH, h1, table, td, tr, th
+
+except ImportError:
+    pwd_dir = os.getcwd()
+    os.chdir(os.getcwd() + os.sep + 'PyH-0.1.1')
+    os.system('python setup.py install')
+    os.chdir(pwd_dir)
+    from pyh import PyH, h1, table, td, tr, th
 
 __file_name = os.path.split(__file__)[1]
 
@@ -474,7 +482,6 @@ class objectHtmlDataList:
                 self.throw = self.commonTableFunction(dir_file_list[file], self.attribute_value_list_key,
                                                   self.attribute_value_list_value, self.throw)
         page = PyH('Intel Compute Data report')
-        page.addCSS(os.getcwd() + os.sep + 'common.css')
         page << h1('Intel Compute Data report', align='center')
 
         tab = table(cellpadding="0", cellspacing="0", cl="table0")
@@ -695,7 +702,7 @@ def deal_html_data():
     write_file.write(line)
     while len(line) != 0:
         line = read_file.readline()
-        if 'href' in line:
+        if '</head>' == line.strip('\n'):
             write_file.write('<style type="text/css">tr{ white-space:0;}\n.table0{border:none;width:100%;}\n'
                              '.table0_td{padding:0 0px 0px 0;}\n.table1 {border-collapse:collapse;width:100%;}\n'
                              '.table1 td{ height:30px;border:#333333 solid 1px;text-align:center;width:25%}\n'

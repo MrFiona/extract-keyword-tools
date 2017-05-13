@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<text_result>
+	<result_SST-processor>
+		<content name="Name" value="Intel(R) Xeon(R) Platinum 8176M CPU @ 2.10GHz"/>
+		<content name="Microcode Version" value="0X8284F016"/>
+		<content name="Number of Physical Processor Packages" value="2"/>
+		<content name="Number of Physical Processor Cores" value="256"/>
+		<content name="Number of Logical Processor Cores" value="256112"/>
+		<content name="Hyper Threading" value="Supported And Enabled"/>
+		<content name="Physical Cores" value="CPU55"/>
+		<content name="Logical Cores" value="CPU111"/>
+		<content name="Socket" value="0"/>
+		<content name="Processor" value="083"/>
+		<content name="Physical Cores" value="030"/>
+		<content name="Logical Processor" value="001"/>
+		<content name="APIC ID" value="061"/>
+		<content name="Socket" value="1"/>
+		<content name="Processor" value="111"/>
+		<content name="Physical Cores" value="030"/>
+		<content name="Logical Processor" value="001"/>
+		<content name="APIC ID" value="125"/>
+	</result_SST-processor>
+</text_result>
