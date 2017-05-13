@@ -1,4 +1,3 @@
-[ result_ProcessorInfo ]
 Name                  Genuine Intel(R) CPU 0000%@
 Address Width         64 bits
 Architecture          x64
@@ -10,4 +9,3 @@ Manufacturer          GenuineIntel
 Maximum Clock Speed   2101 MHz
 Processor ID          BFEBFBFF00050654
 Processor Type        Central Processor
-

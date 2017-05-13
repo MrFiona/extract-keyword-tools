@@ -621,7 +621,7 @@ def create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, a
             f.write('[ %s ]' %actual_file_name.split('.')[0] + '\n' + '\n')
             f.close()
 
-def clear_temp_file(global_actual_file_list, combine_flag=False):
+def clear_temp_file():
     # 移除临时文件
     for file in os.listdir(os.getcwd()):
         if 'tempfile' == file:
@@ -633,13 +633,6 @@ def clear_temp_file(global_actual_file_list, combine_flag=False):
     for file in os.listdir(os.getcwd() + os.sep + 'result_text'):
         if 'dump' == file:
             shutil.rmtree(os.getcwd() + os.sep + 'result_text' + os.sep + 'dump')
-
-        # for actual_file_name in global_actual_file_list:
-        #     print actual_file_name + '_result_report.xml', file, combine_flag
-        #     if (not combine_flag) and (file != 'result_show.html' or file != 'result_data.txt' or file != (actual_file_name + '_result_report.xml')
-        #         or file != ('result_' + actual_file_name) or file != 'dump' or file != 'tab_num_dir'):
-        #         os.remove(os.getcwd() + os.sep + 'result_text' + os.sep + file)
-
 
     # 清理无用文件
     result_path = os.getcwd() + os.sep + 'result_text'
@@ -753,12 +746,12 @@ if __name__ == '__main__':
         # 生成txt文档
         create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, attribute_value_list_value, combine_flag, print_flag,
                          multi_file_flag=multi_file_flag, first_file_flag=first_file_flag)
-        # 生成xml文件
-        create_xml(actual_file_name)
 
-    # 处理将html文件
+    # 生成xml文件
+    create_xml(global_actual_file_list, combine_flag=combine_flag)
+    # 处理生成的html文件
     deal_html_data()
     # 清理临时文件
-    clear_temp_file(global_actual_file_list=global_actual_file_list, combine_flag=False)
+    clear_temp_file()
     time_end = time.time()
     # print time_end - time_start
