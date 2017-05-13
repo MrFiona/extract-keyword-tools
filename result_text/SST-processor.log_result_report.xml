@@ -19,5 +19,28 @@
 		<content name="Physical Cores" value="030"/>
 		<content name="Logical Processor" value="001"/>
 		<content name="APIC ID" value="125"/>
+		<content name="CPUID" value="0x50654"/>
+		<content name="CPU Name" value="Unknown"/>
+		<content name="Extended Model" value="5"/>
+		<content name="Model" value="5"/>
+		<content name="Extended Family" value="0"/>
+		<content name="Family" value="6"/>
+		<content name="Processor Type" value="Original OEM Processor"/>
+		<content name="Stepping" value="4"/>
+		<content name="CPU Internal Stepping" value="Unknown"/>
+		<content name="CLFLUSH Instruction(CLFSH)" value="Supported"/>
+		<content name="Compare And Exchange 8 Bytes Instruction(CX8)" value="Supported"/>
+		<content name="Streaming SIMD Extensions 4.1(SSE4.1)" value="Supported"/>
+		<content name="Streaming SIMD Extensions 4.2(SSE4.2)" value="Supported"/>
+		<content name="Conditional Move Instructions(CMOV)" value="Supported"/>
+		<content name="Fast Floating Point Save and Restore(FXSR)" value="Supported"/>
+		<content name="Streaming SIMD Extensions(SSE)" value="Supported"/>
+		<content name="Streaming SIMD Extensions 2(SSE2)" value="Supported"/>
+		<content name="Streaming SIMD Extensions 3(SSE3)" value="Supported"/>
+		<content name="Supplemental Streaming SIMD Extensions 3(SSSE3)" value="Supported"/>
+		<content name="Enhanced Intel SpeedStep Technology(EST)" value="Supported And Enabled"/>
+		<content name="Trusted Execution Technology(TXT)" value="Supported"/>
+		<content name="Virtualization Technology(VMX)" value="Supported"/>
+		<content name="MMX Technology" value="Supported"/>
 	</result_SST-processor>
 </text_result>

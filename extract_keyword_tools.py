@@ -482,7 +482,7 @@ class objectHtmlDataList:
                 self.throw = self.commonTableFunction(dir_file_list[file], self.attribute_value_list_key,
                                                   self.attribute_value_list_value, self.throw)
         page = PyH('Intel Compute Data report')
-        page << h1('Intel Compute Data report', align='center')
+        page << h1('Intel Compute Data report', style="font-family:arial;color:red;font-size:35px;text-align:center")
 
         tab = table(cellpadding="0", cellspacing="0", cl="table0")
         for t in range(0, len(self.throw), 2):

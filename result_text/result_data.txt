@@ -1,20 +1,43 @@
 [ result_SST-processor ]
-Name                                    Intel(R) Xeon(R) Platinum 8176M CPU @ 2.10GHz
-Microcode Version                       0X8284F016
-Number of Physical Processor Packages   2
-Number of Physical Processor Cores      256
-Number of Logical Processor Cores       256112
-Hyper Threading                         Supported And Enabled
-Physical Cores                         CPU55
-Logical Cores                          CPU111
-Socket                                  0
-Processor                              083
-Physical Cores                         030
-Logical Processor                      001
-APIC ID                                061
-Socket                                  1
-Processor                              111
-Physical Cores                         030
-Logical Processor                      001
-APIC ID                                125
+Name                                              Intel(R) Xeon(R) Platinum 8176M CPU @ 2.10GHz
+Microcode Version                                 0X8284F016
+Number of Physical Processor Packages             2
+Number of Physical Processor Cores                256
+Number of Logical Processor Cores                 256112
+Hyper Threading                                   Supported And Enabled
+Physical Cores                                   CPU55
+Logical Cores                                    CPU111
+Socket                                            0
+Processor                                        083
+Physical Cores                                   030
+Logical Processor                                001
+APIC ID                                          061
+Socket                                            1
+Processor                                        111
+Physical Cores                                   030
+Logical Processor                                001
+APIC ID                                          125
+CPUID                                             0x50654
+CPU Name                                          Unknown
+Extended Model                                    5
+Model                                             5
+Extended Family                                   0
+Family                                            6
+Processor Type                                    Original OEM Processor
+Stepping                                          4
+CPU Internal Stepping                             Unknown
+CLFLUSH Instruction(CLFSH)                        Supported
+Compare And Exchange 8 Bytes Instruction(CX8)     Supported
+Streaming SIMD Extensions 4.1(SSE4.1)             Supported
+Streaming SIMD Extensions 4.2(SSE4.2)             Supported
+Conditional Move Instructions(CMOV)               Supported
+Fast Floating Point Save and Restore(FXSR)        Supported
+Streaming SIMD Extensions(SSE)                    Supported
+Streaming SIMD Extensions 2(SSE2)                 Supported
+Streaming SIMD Extensions 3(SSE3)                 Supported
+Supplemental Streaming SIMD Extensions 3(SSSE3)   Supported
+Enhanced Intel SpeedStep Technology(EST)          Supported And Enabled
+Trusted Execution Technology(TXT)                 Supported
+Virtualization Technology(VMX)                    Supported
+MMX Technology                                    Supported
 
