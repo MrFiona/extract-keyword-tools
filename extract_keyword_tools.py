@@ -651,9 +651,9 @@ def clear_temp_file():
 #判断输入文件的有效性，支持多个文件
 def judge_input_file(file):
     # file必须要有值
-    contion = (len(sys.argv[1:]) == 1) and (sys.argv[1:] in [['--help'], ['-help']])
+    contion = (len(sys.argv[1:]) == 1) and (sys.argv[1:] in [['--help'], ['-help'], ['-p'], ['--print'], ['-print']])
     # print contion
-    # print sys.argv[1:]
+    # print 'ddddd:\t', sys.argv[1:]
     # 如果未输入文件名当且仅上在只有输出帮助信息的时候成立
     if not file:
         # 文件名必须放在在任何条件之前，否则执行警告
