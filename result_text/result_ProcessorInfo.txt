@@ -1,4 +1,3 @@
-[ result_ProcessorInfo ]
 Name                                    Genuine Intel(R) CPU 0000%@
 Address Width                           64 bits
 Architecture                            x64
@@ -28,4 +27,3 @@ Number of Physical Processor Cores      24
 Number of Logical Processor Cores       48
 Processor                              0095
 Physical Cores                         0023
-

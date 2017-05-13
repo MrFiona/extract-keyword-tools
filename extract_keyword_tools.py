@@ -8,9 +8,8 @@ import glob
 import time
 import shutil
 import getopt
-import threading
-import collections
 from pyh import *
+from create_xml import create_xml
 
 
 __file_name = os.path.split(__file__)[1]
@@ -217,7 +216,7 @@ def get_keyword(keyword=None):
     return keyword_list
 
 #根据行列表和关键字从原始文件提取数据
-def range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list, combine_flag=False):
+def range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list, combine_flag=False, multi_file_flag=False, first_file_flag=False):
     def judge_line_valid(line_lfet, line_right, orignal_file_max_length):
         # 判断行区间左右下标有效性
         # 若不处理则当超过文件长度时提取的内容为空
@@ -268,7 +267,7 @@ def range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list
             if continue_add_flag:
                 # print 'eeee'
                 fdest = open(temp_file_path, 'a+')
-            elif not continue_add_flag:
+            else:
                 # print 'eeeeeeeeee'
                 fdest = open(temp_file_path, 'w')
 
@@ -391,14 +390,14 @@ def range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list
         is_exist_key_word = signal_remove(actual_file_name, pre_dir_name, orignal_file_max_length, None,
                                           keyword_list, True, is_exist_key_word)
     #如果keyword找不到并且连接标志未开启则清零文件
-    if not is_exist_key_word and not combine_flag:
+    if not is_exist_key_word and (not combine_flag and (not multi_file_flag or (multi_file_flag and first_file_flag))):
         dir_path = os.getcwd() + os.sep + 'result_text'
         if os.path.exists(dir_path):
             f = open(dir_path + os.sep + 'result_data.txt', 'w')
             f.truncate(0)
             f.close()
 
-    if not combine_flag:
+    if not combine_flag and (not multi_file_flag or (multi_file_flag and first_file_flag)):
         if os.path.exists(os.getcwd() + os.sep + 'resultfile'):
             for file in os.listdir(os.getcwd()+os.sep+'resultfile'):
                 # print filename.split('.')[0]
@@ -407,7 +406,8 @@ def range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list
     # 如果不能在并且combine无连接标记时清零文件，防止之前的结果保留
 
 #检测参数，根据参数作出相应动作，分类操作
-def classify_parameters(actual_file_name, pre_dir_name, range_lineno_list=None, keyword_list=None, combine_flag=False):
+def classify_parameters(actual_file_name, pre_dir_name, range_lineno_list=None, keyword_list=None, combine_flag=False, multi_file_flag=False,
+                        first_file_flag=False):
     #分类操作处理参数
     # print 'swe', range_lineno_list
     is_exist_range_lineno = range_lineno_list and len(range_lineno_list) and len(range_lineno_list[0]) != 0
@@ -416,7 +416,7 @@ def classify_parameters(actual_file_name, pre_dir_name, range_lineno_list=None, 
     #1、行区间和关键字至少有一个存在
     if is_exist_range_lineno or is_exist_keyword:
         #读取文件中对应行号的信息
-        range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list, combine_flag)
+        range_remove(actual_file_name, pre_dir_name, range_lineno_list, keyword_list, combine_flag, multi_file_flag, first_file_flag)
 
     #2、行区间和关键字都不存在，则默认拷贝全部内容
     if not is_exist_range_lineno and not keyword_list:
@@ -428,9 +428,11 @@ def classify_parameters(actual_file_name, pre_dir_name, range_lineno_list=None, 
 #将目标数据显示在html
 class objectHtmlDataList:
 
-    def __init__(self, actual_file_name, dest_path=os.getcwd()+os.sep+'resultfile', combine_flag=False):
+    def __init__(self, actual_file_name, dest_path=os.getcwd()+os.sep+'resultfile', combine_flag=False, multi_file_flag=False, first_file_flag=False):
         self.dest_path = dest_path
         self.actual_file_name = actual_file_name
+        self.first_file_flag = first_file_flag
+        self.multi_file_flag = multi_file_flag
         self.combine_flag = combine_flag
         self.object_path = os.getcwd() + os.sep + 'result_text'
         self.throw = []
@@ -485,7 +487,7 @@ class objectHtmlDataList:
             os.makedirs(temp_file_path)
 
         #连接标记未开启，dump原始文件清除
-        if not self.combine_flag:
+        if not self.combine_flag and (not self.multi_file_flag or (self.multi_file_flag and self.first_file_flag)):
             for file in glob.glob(temp_file_path + os.sep + '*.dump'):
                 os.remove(file)
 
@@ -511,20 +513,23 @@ class objectHtmlDataList:
 
 #生成text文档
 def create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, attribute_value_list_value
-                     ,combine_flag=False, print_flag=False):
+                     ,combine_flag=False, print_flag=False, multi_file_flag=False, first_file_flag=False):
     key_value_flag = True
     if not attribute_value_list_key or not attribute_value_list_value:
         key_value_flag = False
     result_text_path = os.getcwd() + os.sep + 'result_text'
     #如果不加参数--combine则默认移除历史记录的text结果
-    if not combine_flag:
+    # print 'gggggg:\t', not combine_flag and (not multi_file_flag or (multi_file_flag and first_file_flag))
+    if not combine_flag and (not multi_file_flag or (multi_file_flag and first_file_flag)):
         if not os.path.exists(result_text_path):
             os.makedirs(result_text_path)
         #如果用glob中的file删除的话会报权限问题
+        # print '\nssssssssss:\t', os.listdir(result_text_path)
         for file in os.listdir(result_text_path):
-            if file == 'result_data.txt' or file == 'result_show.html' or file == 'dump':
+            if file == 'result_data.txt' or file == 'result_show.html' or file == 'dump' or file == 'tab_num_dir':
                 continue
             os.remove(result_text_path + os.sep + file)
+            # print '移除file:\t', file
     if not os.path.exists(result_text_path):
         os.makedirs(result_text_path)
 
@@ -552,27 +557,37 @@ def create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, a
         if print_flag:
             print '\033[42m%s\033[0m' % actual_file_name
         obj = open(result_text_path + os.sep + 'result' + '_' + actual_file_name, 'wb')
+        #增加获取key和value之间空格的个数列表
+        if not os.path.exists(result_text_path + os.sep + 'tab_num_dir'):
+            os.makedirs(result_text_path + os.sep + 'tab_num_dir')
+
+        write_tab_num_obj = open(result_text_path + os.sep + 'tab_num_dir' + os.sep + 'tab_num_' + actual_file_name, 'wb')
+        key_value_tab_num_list = []
         for key, value in zip(attribute_value_list_key, attribute_value_list_value):
             tab_num = ' ' * (legth_list[i] + 2)
+            key_value_tab_num_list.append(str(legth_list[i] + 2))
             obj.write(key + tab_num + value + '\n')
             if print_flag:
                 print key, '\t', value
             i = i+1
+        write_tab_num_obj.write(' '.join(key_value_tab_num_list) + '\n')
         obj.close()
 
         #如果存在则将文件清零
         if os.path.exists(os.getcwd() + os.sep + 'result_text' + os.sep + 'result_data.txt'):
             f = open(os.getcwd() + os.sep + 'result_text' + os.sep + 'result_data.txt', 'w')
             #如果是当前结果为空并且连接标记未开启，如果开启则应该保留
-            if not combine_flag:
+            if not combine_flag and (not multi_file_flag or (multi_file_flag and first_file_flag)):
                 f.truncate(0)
             f.close()
 
 
         #将结果写到一个文件
         file_list = os.listdir(result_text_path)
+        file1_list = [ file for file in file_list if 'result_data.txt' != file and 'result_show.html' != file and file != 'dump' and file != 'tab_num_dir' and 'result_report.xml' not in file ]
+        # print '\nfile1_list:\t', file1_list
         for file in file_list:
-            if 'result_data.txt' == file or 'result_show.html' == file or file == 'dump':
+            if 'result_data.txt' == file or 'result_show.html' == file or file == 'dump' or file == 'tab_num_dir' or 'result_report.xml' in file:
                 continue
 
             read_obj = open(result_text_path + os.sep + file, 'rb')
@@ -599,15 +614,35 @@ def create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, a
             f.write('[ %s ]' %actual_file_name.split('.')[0] + '\n' + '\n')
             f.close()
 
-def clear_temp_file(combine_flag=False):
+def clear_temp_file(global_actual_file_list, combine_flag=False):
     # 移除临时文件
     for file in os.listdir(os.getcwd()):
         if 'tempfile' == file:
             shutil.rmtree(os.getcwd() + os.sep + 'tempfile')
-        if 'dump'  == file and not combine_flag:
-            shutil.rmtree(os.getcwd() + os.sep + 'result_text' + os.sep + 'dump')
         if 'resultfile' == file:
             shutil.rmtree(os.getcwd() + os.sep + 'resultfile')
+
+    # print 'global_actual_file_list:\t', global_actual_file_list
+    for file in os.listdir(os.getcwd() + os.sep + 'result_text'):
+        if 'dump' == file:
+            shutil.rmtree(os.getcwd() + os.sep + 'result_text' + os.sep + 'dump')
+
+        # for actual_file_name in global_actual_file_list:
+        #     print actual_file_name + '_result_report.xml', file, combine_flag
+        #     if (not combine_flag) and (file != 'result_show.html' or file != 'result_data.txt' or file != (actual_file_name + '_result_report.xml')
+        #         or file != ('result_' + actual_file_name) or file != 'dump' or file != 'tab_num_dir'):
+        #         os.remove(os.getcwd() + os.sep + 'result_text' + os.sep + file)
+
+
+    # 清理无用文件
+    result_path = os.getcwd() + os.sep + 'result_text'
+    remove_dir_path = result_path + os.sep + 'tab_num_dir'
+
+    if os.path.exists(remove_dir_path):
+        for file in os.listdir(remove_dir_path):
+            os.remove(remove_dir_path + os.sep + file)
+        shutil.rmtree(remove_dir_path)
+
 
 #判断输入文件的有效性，支持多个文件
 def judge_input_file(file):
@@ -625,10 +660,13 @@ def judge_input_file(file):
 
     file_info_list = []
     file_list = file.split(';')
+    # print file_list
     for signal_file in file_list:
         #默认值
         actual_file_name = signal_file
         pre_dir_name = os.getcwd()
+        # print 'signal_file:\t', signal_file
+        # print os.path.split(signal_file)[0]
         #判断文件是否是有效的路径
         if os.path.isdir(os.path.split(signal_file)[0]):
             # print '是路径'
@@ -637,12 +675,14 @@ def judge_input_file(file):
             #是路径则判断文件是否存在
             if not actual_file_name in os.listdir(pre_dir_name):
                 # print '文件在对应目录中不存在'
-                raise UserWarning('\033[31m文件是路径但是在对应目录中不存在\033[0m')
+                raise UserWarning('\033[31m文件 [ %s ] 是路径但是在对应目录中不存在\033[0m' %signal_file)
         #非路径则默认在当前目录下
         else:
             if not signal_file in os.listdir(os.getcwd()):
-                raise UserWarning('\033[31m文件不是路径并且在当前目录中不存在\033[0m')
+                raise UserWarning('\033[31m文件 [ %s ] 不是路径并且在当前目录中不存在\033[0m' %signal_file)
         file_info_list.append([actual_file_name, pre_dir_name])
+        # print 'actual_file_name:\t', actual_file_name
+        # print 'pre_dir_name:\t', pre_dir_name
     return file_info_list
 
 #处理将html文件拷贝到另一台机器后造成的格式问题bug
@@ -670,31 +710,48 @@ def deal_html_data():
 
 if __name__ == '__main__':
     time_start = time.time()
+    global_actual_file_list = []
+    multi_file_flag = False
+
     #命令行参数设置
     orignal_file, range_lineno_string, keyword, combine_flag, print_flag= main()
     # print orignal_file,range_lineno_string, keyword, combine_flag, print_flag
     #判断输入的文件是否带有（绝对,相对）路径，如不带则默认是当前目录
     file_info_list = judge_input_file(orignal_file)
+    # print 'file_info_list:\t', file_info_list
     #获取行区间range
     legal_lineno_list = get_range_line(range_lineno_string)
     # print '4444',legal_lineno_list
     #获取keword
     keyword_list = get_keyword(keyword)
     for file in file_info_list:
+        first_file_flag = False
+        if file == file_info_list[0]:
+            first_file_flag = True
+        # print 'first_file_flag:\t', first_file_flag
+
         #同一次输入多个文件，之间默认是连接的，连接标志置为True
         if len(file_info_list) > 1:
-            combine_flag = True
+            # combine_flag = True
+            multi_file_flag = True
+
         actual_file_name, pre_dir_name = file[0], file[1]
+        global_actual_file_list.append(actual_file_name)
         #根据命令行参数分类进行处理
-        classify_parameters(actual_file_name, pre_dir_name, legal_lineno_list, keyword_list, combine_flag=combine_flag)
+        classify_parameters(actual_file_name, pre_dir_name, legal_lineno_list, keyword_list, combine_flag=combine_flag,
+                            multi_file_flag=multi_file_flag, first_file_flag=first_file_flag)
         #生成html
-        object = objectHtmlDataList(actual_file_name, combine_flag=combine_flag)
+        object = objectHtmlDataList(actual_file_name, combine_flag=combine_flag, multi_file_flag=multi_file_flag, first_file_flag=first_file_flag)
         attribute_value_list_key, attribute_value_list_value = object.generateTable()
         # 生成txt文档
-        create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, attribute_value_list_value, combine_flag, print_flag)
-    #清理临时文件
-    clear_temp_file(combine_flag=False)
+        create_text_info(actual_file_name, pre_dir_name, attribute_value_list_key, attribute_value_list_value, combine_flag, print_flag,
+                         multi_file_flag=multi_file_flag, first_file_flag=first_file_flag)
+        # 生成xml文件
+        create_xml(actual_file_name)
+
     # 处理将html文件
     deal_html_data()
+    # 清理临时文件
+    clear_temp_file(global_actual_file_list=global_actual_file_list, combine_flag=False)
     time_end = time.time()
     # print time_end - time_start

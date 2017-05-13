@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<text_result>
+	<result_ProcessorInfo>
+		<content name="Name" value="Genuine Intel(R) CPU 0000%@"/>
+		<content name="Address Width" value="64 bits"/>
+		<content name="Architecture" value="x64"/>
+		<content name="Current Clock Speed" value="1000 MHz"/>
+		<content name="Data Width" value="64 bits"/>
+		<content name="Description" value="Intel64 Family 6 Model 85 Stepping 4"/>
+		<content name="Device ID" value="CPU0"/>
+		<content name="Manufacturer" value="GenuineIntel"/>
+		<content name="Maximum Clock Speed" value="2101 MHz"/>
+		<content name="Processor ID" value="BFEBFBFF00050654"/>
+		<content name="Processor Type" value="Central Processor"/>
+		<content name="Role" value="CPU"/>
+		<content name="Voltage Capabilities" value="Value of the field is not Available"/>
+		<content name="Microcode Version" value="0X200000F"/>
+		<content name="Number of Physical Processor Packages" value="2"/>
+		<content name="Hyper Threading" value="Supported And Enabled"/>
+		<content name="Number of Logical Processor Per Core" value="2"/>
+		<content name="Socket" value="0"/>
+		<content name="Number of Physical Processor Cores" value="24"/>
+		<content name="Number of Logical Processor Cores" value="48"/>
+		<content name="Processor" value="0047"/>
+		<content name="Physical Cores" value="0023"/>
+		<content name="Logical processors" value="0047"/>
+		<content name="APIC ID" value="0059"/>
+		<content name="Socket" value="1"/>
+		<content name="Number of Physical Processor Cores" value="24"/>
+		<content name="Number of Logical Processor Cores" value="48"/>
+		<content name="Processor" value="0095"/>
+		<content name="Physical Cores" value="0023"/>
+	</result_ProcessorInfo>
+</text_result>
