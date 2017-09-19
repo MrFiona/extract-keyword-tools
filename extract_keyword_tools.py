@@ -729,7 +729,7 @@ def create_xml(global_actual_file_list, combine_flag=False):
     if combine_flag:
         #开启吗，判断历史xml数据是否含有该文件结果数据，有则删除重写
         read_old_file = result_path + os.sep + 'create_result_report.xml'
-        exist_file_falg = False
+        exist_file_flag = False
         if os.path.exists(read_old_file):
             for file in global_actual_file_list:
                 read_old = open(read_old_file, 'r')
@@ -739,13 +739,13 @@ def create_xml(global_actual_file_list, combine_flag=False):
                     # print line.strip()
                     if line.strip() == '<result_' + file.split('.')[0] + '>':
                         # print '存在历史数据记录!'
-                        exist_file_falg = True
+                        exist_file_flag = True
 
-                    if not exist_file_falg:
+                    if not exist_file_flag:
                         write_file.write(line)
 
                     if line.strip() == '</result_' + file.split('.')[0] + '>':
-                        exist_file_falg = False
+                        exist_file_flag = False
 
                 write_file.close()
                 read_old.close()
@@ -773,11 +773,11 @@ def create_xml(global_actual_file_list, combine_flag=False):
     global_actual_file_list.sort()
     # print 'global_actual_file_list:\t', global_actual_file_list
     for actual_file_name in global_actual_file_list:
-        # print 'actual_file_name:\t', actual_file_name
+        print 'actual_file_name:\t', actual_file_name
         result_file_list = [ file for file in glob.glob(result_path + os.sep + '*') if 'result_' + actual_file_name in file ]
         tab_num_file_list = [ file for file in glob.glob(result_path + os.sep + 'tab_num_dir' + os.sep + '*') if actual_file_name in file ]
-        # print 'result_file_list:\t', result_file_list
-        # print 'tab_num_file_list:\t', tab_num_file_list
+        print 'result_file_list:\t', result_file_list
+        print 'tab_num_file_list:\t', tab_num_file_list
 
         for file in result_file_list:
             # get result data

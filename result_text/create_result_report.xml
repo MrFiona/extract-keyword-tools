@@ -1,16 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <text_result>
-	<result_ProcessorInfo>
-		<content name="Name" value="Genuine Intel(R) CPU 0000%@"/>
-		<content name="Address Width" value="64 bits"/>
-		<content name="Architecture" value="x64"/>
-		<content name="Current Clock Speed" value="1000 MHz"/>
-		<content name="Data Width" value="64 bits"/>
-		<content name="Description" value="Intel64 Family 6 Model 85 Stepping 4"/>
-		<content name="Device ID" value="CPU0"/>
-		<content name="Manufacturer" value="GenuineIntel"/>
-		<content name="Maximum Clock Speed" value="2101 MHz"/>
-		<content name="Processor ID" value="BFEBFBFF00050654"/>
-		<content name="Processor Type" value="Central Processor"/>
-	</result_ProcessorInfo>
+	<result_ApachePass>
+		<content name="Intel DIMM Gen 1 Software Version" value="01.00.01.1004"/>
+		<content name="Total Capacity" value="63.25 GiB"/>
+		<content name="Memory Capacity" value="30.94 GiB"/>
+		<content name="App Direct Capacity" value="32.00 GiB"/>
+		<content name="Un-configured Capacity" value="32.06 GiB"/>
+		<content name="Inaccessible Capacity" value="0 B"/>
+		<content name="Reserved Capacity" value="251.75 MiB"/>
+		<content name="Memory Modes" value="1LM ; Memory Mode ; Storage Mode ; App Direct"/>
+		<content name="Replication Support" value="App Direct Mirroring"/>
+		<content name="Reliability  Support" value="Not Available"/>
+		<content name="Alignment" value="30"/>
+		<content name="Channel Interleave Support" value="12"/>
+		<content name="Channel Interleave Way Support" value="1; 2; 3; 4; 6"/>
+		<content name="Memory Controller Interleave Support" value="12"/>
+		<content name="Platform Config Supported" value="TRUE"/>
+		<content name="Current Volatile Mode" value="Memory Mode"/>
+		<content name="Current App Direct Mode" value="App Direct"/>
+		<content name="DimmUID" value="8980-a1-4416-35393030"/>
+		<content name="Manufacturer ID" value="0x8980"/>
+	</result_ApachePass>
+	<result_OsInfo>
+		<content name="Build Number" value="9600"/>
+		<content name="Build Type" value="Multiprocessor Free"/>
+		<content name="Caption" value="Microsoft Windows Server 2012 R2 Datacenter"/>
+		<content name="Code Set" value="1252"/>
+		<content name="Country Code" value="1"/>
+		<content name="Current Time Zone" value="GMT  -8:0"/>
+		<content name="Encryption Level" value="256"/>
+		<content name="Install Date" value="23/12/2016"/>
+		<content name="Locale" value="0409"/>
+		<content name="Manufacturer" value="Microsoft Corporation"/>
+		<content name="Number Of Users" value="3"/>
+		<content name="Organization" value="Not Available"/>
+		<content name="OS Architecture" value="64-bit"/>
+		<content name="OS Language" value="English - United States"/>
+		<content name="OS SKU" value="Server Datacenter (full installation)"/>
+		<content name="OS Type" value="WINNT"/>
+		<content name="Primary OS" value="TRUE"/>
+		<content name="Registered User" value="Windows User"/>
+		<content name="Serial Number" value="00260-00000-09041-AA112"/>
+		<content name="Service Pack Version" value="Not Available"/>
+		<content name="Status" value="OK"/>
+		<content name="System Directory" value="C:\windows\system32"/>
+		<content name="System Drive" value="C:"/>
+		<content name="Version" value="6.3.9600"/>
+		<content name="WIMBoot Configuration" value="Not Enabled"/>
+	</result_OsInfo>
+	<result_OsInfo>
+		<content name="Build Number" value="9600"/>
+		<content name="Build Type" value="Multiprocessor Free"/>
+		<content name="Caption" value="Microsoft Windows Server 2012 R2 Datacenter"/>
+		<content name="Code Set" value="1252"/>
+		<content name="Country Code" value="1"/>
+		<content name="Current Time Zone" value="GMT  -8:0"/>
+		<content name="Encryption Level" value="256"/>
+		<content name="Install Date" value="23/12/2016"/>
+		<content name="Locale" value="0409"/>
+		<content name="Manufacturer" value="Microsoft Corporation"/>
+		<content name="Number Of Users" value="3"/>
+		<content name="Organization" value="Not Available"/>
+		<content name="OS Architecture" value="64-bit"/>
+		<content name="OS Language" value="English - United States"/>
+		<content name="OS SKU" value="Server Datacenter (full installation)"/>
+		<content name="OS Type" value="WINNT"/>
+		<content name="Primary OS" value="TRUE"/>
+		<content name="Registered User" value="Windows User"/>
+		<content name="Serial Number" value="00260-00000-09041-AA112"/>
+		<content name="Service Pack Version" value="Not Available"/>
+		<content name="Status" value="OK"/>
+		<content name="System Directory" value="C:\windows\system32"/>
+		<content name="System Drive" value="C:"/>
+		<content name="Version" value="6.3.9600"/>
+		<content name="WIMBoot Configuration" value="Not Enabled"/>
+		<content name="Windows Directory" value="C:\windows"/>
+		<content name="WQL" value="Unknown"/>
+	</result_OsInfo>
+	<result_OsInfo>
+		<content name="Build Number" value="9600"/>
+		<content name="Build Type" value="Multiprocessor Free"/>
+		<content name="Caption" value="Microsoft Windows Server 2012 R2 Datacenter"/>
+		<content name="Code Set" value="1252"/>
+		<content name="Country Code" value="1"/>
+		<content name="Current Time Zone" value="GMT  -8:0"/>
+		<content name="Encryption Level" value="256"/>
+		<content name="Install Date" value="23/12/2016"/>
+		<content name="Locale" value="0409"/>
+		<content name="Manufacturer" value="Microsoft Corporation"/>
+		<content name="Number Of Users" value="3"/>
+		<content name="Organization" value="Not Available"/>
+		<content name="OS Architecture" value="64-bit"/>
+		<content name="OS Language" value="English - United States"/>
+		<content name="OS SKU" value="Server Datacenter (full installation)"/>
+		<content name="OS Type" value="WINNT"/>
+		<content name="Primary OS" value="TRUE"/>
+		<content name="Registered User" value="Windows User"/>
+		<content name="Serial Number" value="00260-00000-09041-AA112"/>
+		<content name="Service Pack Version" value="Not Available"/>
+		<content name="Status" value="OK"/>
+		<content name="System Directory" value="C:\windows\system32"/>
+		<content name="System Drive" value="C:"/>
+		<content name="Version" value="6.3.9600"/>
+		<content name="WIMBoot Configuration" value="Not Enabled"/>
+		<content name="Windows Directory" value="C:\windows"/>
+		<content name="WQL" value="Unknown"/>
+	</result_OsInfo>
+	<result_OsInfo>
+		<content name="Build Number" value="9600"/>
+		<content name="Build Type" value="Multiprocessor Free"/>
+		<content name="Caption" value="Microsoft Windows Server 2012 R2 Datacenter"/>
+		<content name="Code Set" value="1252"/>
+		<content name="Country Code" value="1"/>
+		<content name="Current Time Zone" value="GMT"/>
+		<content name="Encryption Level" value="256"/>
+		<content name="Install Date" value="23/12/2016"/>
+		<content name="Locale" value="0409"/>
+		<content name="Manufacturer" value="Microsoft Corporation"/>
+		<content name="Number Of Users" value="3"/>
+	</result_OsInfo>
+	<result_OsInfo>
+		<content name="Build Number" value="9600"/>
+		<content name="Build Type" value="Multiprocessor Free"/>
+		<content name="Caption" value="Microsoft Windows Server 2012 R2 Datacenter"/>
+		<content name="Code Set" value="1252"/>
+		<content name="Country Code" value="1"/>
+		<content name="Current Time Zone" value="GMT"/>
+		<content name="Encryption Level" value="256"/>
+		<content name="Install Date" value="23/12/2016"/>
+		<content name="Locale" value="0409"/>
+		<content name="Manufacturer" value="Microsoft Corporation"/>
+		<content name="Number Of Users" value="3"/>
+	</result_OsInfo>
+	<result_OsInfo>
+		<content name="Build Number" value="9600"/>
+		<content name="Build Type" value="Multiprocessor Free"/>
+		<content name="Caption" value="Microsoft Windows Server 2012 R2 Datacenter"/>
+		<content name="Code Set" value="1252"/>
+		<content name="Country Code" value="1"/>
+		<content name="Current Time Zone" value="GMT"/>
+		<content name="Encryption Level" value="256"/>
+		<content name="Install Date" value="23/12/2016"/>
+		<content name="Locale" value="0409"/>
+		<content name="Manufacturer" value="Microsoft Corporation"/>
+		<content name="Number Of Users" value="3"/>
+	</result_OsInfo>
+	<result_OsInfo>
+		<content name="Build Number" value="9600"/>
+		<content name="Build Type" value="Multiprocessor Free"/>
+		<content name="Caption" value="Microsoft Windows Server 2012 R2 Datacenter"/>
+		<content name="Code Set" value="1252"/>
+		<content name="Country Code" value="1"/>
+		<content name="Current Time Zone" value="GMT"/>
+		<content name="Encryption Level" value="256"/>
+		<content name="Install Date" value="23/12/2016"/>
+		<content name="Locale" value="0409"/>
+		<content name="Manufacturer" value="Microsoft Corporation"/>
+		<content name="Number Of Users" value="3"/>
+	</result_OsInfo>
+	<result_SMBIOS>
+		<content name="BIOS Vendor" value="Intel Corporation"/>
+		<content name="BIOS Version" value="PLYXCRB1.86B.1001.D66.1701302155"/>
+		<content name="Starting Address Segment" value="F000h"/>
+		<content name="BIOS Release Date" value="01/30/2017"/>
+		<content name="BIOS ROM Size" value="16384 KB"/>
+		<content name="BIOS Characteristics Not Supported" value="No"/>
+		<content name="ISA is supported" value="No"/>
+		<content name="MCA is supported" value="No"/>
+		<content name="EISA is supported" value="No"/>
+	</result_SMBIOS>
 </text_result>

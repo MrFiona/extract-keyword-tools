@@ -1,4 +1,3 @@
-[ result_ApachePass ]
 Intel DIMM Gen 1 Software Version      01.00.01.1004
 Total Capacity                         63.25 GiB
 Memory Capacity                        30.94 GiB
@@ -18,28 +17,3 @@ Current Volatile Mode                  Memory Mode
 Current App Direct Mode                App Direct
 DimmUID                                8980-a1-4416-35393030
 Manufacturer ID                        0x8980
-
-[ result_OsInfo ]
-Build Number        9600
-Build Type          Multiprocessor Free
-Caption             Microsoft Windows Server 2012 R2 Datacenter
-Code Set            1252
-Country Code        1
-Current Time Zone   GMT  -8:0
-Encryption Level    256
-Install Date        23/12/2016
-Locale              0409
-Manufacturer        Microsoft Corporation
-Number Of Users     3
-
-[ result_SMBIOS ]
-BIOS Vendor                          Intel Corporation
-BIOS Version                         PLYXCRB1.86B.1001.D66.1701302155
-Starting Address Segment             F000h
-BIOS Release Date                    01/30/2017
-BIOS ROM Size                        16384 KB
-BIOS Characteristics Not Supported   No
-ISA is supported                     No
-MCA is supported                     No
-EISA is supported                    No
-

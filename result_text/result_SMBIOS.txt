@@ -1,0 +1,9 @@
+BIOS Vendor                          Intel Corporation
+BIOS Version                         PLYXCRB1.86B.1001.D66.1701302155
+Starting Address Segment             F000h
+BIOS Release Date                    01/30/2017
+BIOS ROM Size                        16384 KB
+BIOS Characteristics Not Supported   No
+ISA is supported                     No
+MCA is supported                     No
+EISA is supported                    No
