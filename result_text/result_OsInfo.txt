@@ -1,11 +1,5 @@
-Build Number        9600
-Build Type          Multiprocessor Free
-Caption             Microsoft Windows Server 2012 R2 Datacenter
-Code Set            1252
-Country Code        1
-Current Time Zone   GMT  -8:0
-Encryption Level    256
-Install Date        23/12/2016
-Locale              0409
-Manufacturer        Microsoft Corporation
-Number Of Users     3
+OS Architecture   64-bit
+OS Language       English - United States
+OS SKU            Server Datacenter (full installation)
+OS Type           WINNT
+Primary OS        TRUE
