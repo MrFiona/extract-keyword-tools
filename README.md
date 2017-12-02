@@ -97,7 +97,7 @@ OS Details
 
     备注：-k 参数用于指定提取的关键词，-k keywords 等价于--keyword=keywords
 
-
+[extract-keyword-tools](https://github.com/MrFiona/extract-keyword-tools/wiki/_Footer/_edit)
     4、$ python extract_keyword_tools.py -f OsInfo.txt -k 'OS'  --print --combine
     OsInfo.txt
     OS Architecture          64-bit
